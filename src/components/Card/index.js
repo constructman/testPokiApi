@@ -1,46 +1,34 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
-import Pokedex from 'pokedex-promise-v2'
-import axios from 'axios'
+
 import './index.css'
 
-const options = {
-  protocol: 'https',
-  hostName: 'localhost:3000/app',
-  versionPath: '/api/v2/',
-  cacheLimit: 100 * 1000, // 100s
-  timeout: 5 * 1000 // 5s
-}
-const P = new Pokedex(options);
 
-function Card () {
 
-  const [data, setData] = useState({});
+function Card ({ pokemon, onClick }) {
 
-  useEffect(() => {
-    const fetchPokemon = async ()=> {
-      try{
-        const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/?limit=60&offset=60`);
-        setData(res.data)
-      } catch (err) {
-        console.log(err);
-      }
-    };
+  const typeClass = "wrapCard";
 
-    fetchPokemon();
-    
-  }, []);
-  console.log({data})
 
-  return(
-    <div className="wrapCard">
-        <div className="card">
-          <div className="image">
-            <div className="stats"></div>
-          </div>
-        </div>
+  return (
+  <>
+    <div onClick={onClick} pokemon={pokemon} className={`${typeClass} ${pokemon.data.types[0].type.name}`}>
+      <div className="card" >{pokemon.data.name}</div>
+      <div className="image" style={{ backgroundImage: `url(${pokemon.data.sprites.front_default})` }} />
+      <div className="stats" >
+        <ul>
+          <li>weight:</li>
+          <li>height:</li>
+          <li>type:</li>
+        </ul>
+        <ul>
+          <li>{pokemon.data.weight/10} kg</li>
+          <li>{pokemon.data.height/10} m</li>
+          <li>{pokemon.data.types[0].type.name}</li>
+        </ul>
+      </div>
     </div>
-  );
+    </>
+  )
 }
 
 export default Card

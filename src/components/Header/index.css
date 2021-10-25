@@ -34,7 +34,7 @@ margin-right: 24px;
   justify-content: flex-end;
   align-items: center;
   border-bottom: 1px solid #eee;
-  padding-right: 24px;
+  margin: 0 24px;
 }
 
 .link{
@@ -56,23 +56,45 @@ margin-right: 24px;
 }
 
 .navPanel{
-  width: 60%;
-  display: flex;
-  
+    width: 65%;
+    display: flex;
+    margin: 0 24px;
 }
 
-ul{
+
+.navPanList{
   width: 100%;
   display: flex;
+  flex-direction: row;
   list-style-type: none;
   justify-content: space-between;
   align-items: center;
 }
 
+.filters{
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .search{
-  width: 30%;
   align-items: center;
   justify-content: center;
+  display: flex;
+  width: 230px;
+}
+
+
+.searchType{
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+}
+
+input{
+  margin-bottom: 12px;
 }
 
 

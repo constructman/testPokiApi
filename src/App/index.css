@@ -8,7 +8,6 @@
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
-  background-color: rgb(191, 243, 243);
 }
 
 .cardList{
@@ -17,4 +16,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 24px 0 24px;
+}
+
+.MuiPagination-ul{
+  display: flex;
+  flex-direction: row;
 }

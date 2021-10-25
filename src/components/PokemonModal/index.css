@@ -1,0 +1,90 @@
+.modalMain{
+  margin: 0 24px;
+  width: 100%;
+}
+
+h2{
+  text-transform: uppercase;
+}
+
+.modalWrap{
+  display: flex;
+  width: 100%;
+ 
+}
+
+.modalCard{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  position: relative;
+  margin-right: 12px;
+}
+
+.statsWrap{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalImg{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+li{
+  display: flex;
+  flex-direction: column;
+}
+
+.modalStats{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 250px;
+  background-color: #ADD8E6;
+  margin-left: 0 12px;
+}
+
+.modalStatsType{
+  margin-left: 12px;
+  width: fit-content;
+}
+
+.grass{
+  background-color: #32CD32;
+}
+
+.fire{
+  background-color: #FF0000;
+}
+
+.bug{
+  background-color: #BDB76B;
+}
+
+.water{
+  background-color: #1E90FF;
+}
+
+.electric{
+  background-color: #FFFF00;
+}
+
+.poison{
+  background-color: #FF00FF;
+}
+
+.ground{
+  background-color: #8B4513;
+}
+
+.normal{
+  background-color: #A9A9A9;
+}
+

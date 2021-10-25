@@ -5,6 +5,7 @@ import {
   Route
 } from 'react-router-dom'
 import App from '../App'
+import Header from '../components/Header'
 import About from '../About'
 import Favorites from '../Favorites'
 
@@ -12,8 +13,9 @@ import Favorites from '../Favorites'
 const Router = () => {
   return (
     <BrowserRouter>
+          <Header />
       <Switch>
-        <Route path="/app">
+        <Route exact={true} path="/">
           <App />
         </Route>
         <Route path="/about">
