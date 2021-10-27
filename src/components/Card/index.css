@@ -9,11 +9,11 @@
   box-sizing: border-box;
   border-radius: 30px;
   cursor: pointer;
-  transition: box-shadow 0.5s;
+  transition: box-shadow 0.25s;
 }
 
 .wrapCard:hover{
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.24);
   
 }
 
@@ -27,11 +27,11 @@
 }
 
 .grass{
-  background-color: #32CD32;
+  background-color: #8cff66;
 }
 
 .fire{
-  background-color: #FF0000;
+  background-color: #ff4d4d;
 }
 
 .bug{

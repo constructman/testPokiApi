@@ -15,6 +15,8 @@ const PokemonModal = ({ isOpen, setIsOpen, pokemon }) => {
     setIsOpen(false)
   };
 
+  const modalStatsTypeValue = "modalStatsTypeValue";
+
 
   return (
     <>
@@ -32,23 +34,26 @@ const PokemonModal = ({ isOpen, setIsOpen, pokemon }) => {
               </div>
               <div className="statsWrap">
                 <div className="modalStats">
-                      <ul>
-                        <li>
-                          <span>Weight</span>
-                          <span>{pokemon.data.weight/10} kg</span>
-                        </li>
-                        <li>
-                          <span>Height</span>
-                          <span>{pokemon.data.height/10} m</span>
-                        </li>
-                      </ul>
-                    <ul> Abilities
-                      <li>{pokemon.data.abilities[0].ability.name}</li>
-                    </ul>
+                  <div className="statType">Stats</div>
+                  <ul>
+                    <li>
+                      <span className="statType">Weight</span>
+                      <span className="statValue">{pokemon.data.weight/10} kg</span>
+                    </li>
+                    <li>
+                      <span className="statType">Height</span>
+                      <span className="statValue">{pokemon.data.height/10} m</span>
+                    </li>
+                  </ul>
+                  <ul>
+                    <span className="statType">Abilities</span>
+                    <li className="statValue">{pokemon.data.abilities[0].ability.name}</li>
+                  </ul>
                 </div>
+                <span className="modalType">Type</span>
                 <div className="modalStatsType">
-                    <div className={pokemon.data.types[0].type.name}>{pokemon.data.types[0].type.name}</div>
-                    <div className={pokemon.data.types[1].type.name}>{pokemon.data.types[1].type.name}</div>
+                    <div className={`${modalStatsTypeValue} ${pokemon.data.types[0].type.name}`}>{pokemon.data.types[0].type.name}</div>
+                    <div className={`${modalStatsTypeValue} ${pokemon.data.types[1].type.name}`}>{pokemon.data.types[1].type.name}</div>
                 </div>
               </div>
             </div>

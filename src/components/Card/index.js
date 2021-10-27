@@ -12,7 +12,7 @@ function Card ({ pokemon, onClick }) {
   return (
   <>
     <div onClick={onClick} pokemon={pokemon} className={`${typeClass} ${pokemon.data.types[0].type.name}`}>
-      <div className="card" >{pokemon.data.name}</div>
+      <div className="card" ><h3>{pokemon.data.name}</h3></div>
       <div className="image" style={{ backgroundImage: `url(${pokemon.data.sprites.front_default})` }} />
       <div className="stats" >
         <ul>

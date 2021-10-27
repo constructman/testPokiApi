@@ -5,12 +5,17 @@
 
 h2{
   text-transform: uppercase;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .modalWrap{
   display: flex;
   width: 100%;
- 
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .modalCard{
@@ -22,7 +27,7 @@ h2{
 }
 
 .statsWrap{
-  width: 50%;
+  width: 45%;
   display: flex;
   flex-direction: column;
 }
@@ -44,24 +49,49 @@ li{
 
 .modalStats{
   display: flex;
+  align-items: center;
   justify-content: space-around;
   width: 100%;
   height: 250px;
   background-color: #ADD8E6;
   margin-left: 0 12px;
+  border-radius: 30px;
 }
 
 .modalStatsType{
-  margin-left: 12px;
   width: fit-content;
+  display: flex;
+}
+
+.statType{
+  margin: 12px 24px 0 24px;
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.modalType{
+  margin: 12px 24px 0 24px;
+  font-size: 32px;
+}
+
+.modalStatsTypeValue{
+  margin: 12px 24px 0 24px;
+  font-size: 24px;
+  border-radius: 12px;
+  padding: 0 12px 12px 12px;
+}
+
+.statValue{
+  margin: 12px 24px 0 24px;
+  font-size: 24px;
 }
 
 .grass{
-  background-color: #32CD32;
+  background-color: #8cff66;
 }
 
 .fire{
-  background-color: #FF0000;
+  background-color: #ff4d4d;
 }
 
 .bug{
