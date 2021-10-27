@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/build/static/css/main.855ca500.chunk.css",
-    "main.js": "/build/static/js/main.57f6eea4.chunk.js",
-    "main.js.map": "/build/static/js/main.57f6eea4.chunk.js.map",
-    "runtime-main.js": "/build/static/js/runtime-main.ba71bf2d.js",
-    "runtime-main.js.map": "/build/static/js/runtime-main.ba71bf2d.js.map",
-    "static/js/2.a0e1377a.chunk.js": "/build/static/js/2.a0e1377a.chunk.js",
-    "static/js/2.a0e1377a.chunk.js.map": "/build/static/js/2.a0e1377a.chunk.js.map",
-    "index.html": "/build/index.html",
-    "static/css/main.855ca500.chunk.css.map": "/build/static/css/main.855ca500.chunk.css.map",
-    "static/js/2.a0e1377a.chunk.js.LICENSE.txt": "/build/static/js/2.a0e1377a.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/build/static/media/logo.f63cb728.png"
+    "main.css": "/testPokiApi/static/css/main.92768327.chunk.css",
+    "main.js": "/testPokiApi/static/js/main.57f6eea4.chunk.js",
+    "main.js.map": "/testPokiApi/static/js/main.57f6eea4.chunk.js.map",
+    "runtime-main.js": "/testPokiApi/static/js/runtime-main.24673385.js",
+    "runtime-main.js.map": "/testPokiApi/static/js/runtime-main.24673385.js.map",
+    "static/js/2.a0e1377a.chunk.js": "/testPokiApi/static/js/2.a0e1377a.chunk.js",
+    "static/js/2.a0e1377a.chunk.js.map": "/testPokiApi/static/js/2.a0e1377a.chunk.js.map",
+    "index.html": "/testPokiApi/index.html",
+    "static/css/main.92768327.chunk.css.map": "/testPokiApi/static/css/main.92768327.chunk.css.map",
+    "static/js/2.a0e1377a.chunk.js.LICENSE.txt": "/testPokiApi/static/js/2.a0e1377a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/testPokiApi/static/media/logo.f63cb728.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ba71bf2d.js",
+    "static/js/runtime-main.24673385.js",
     "static/js/2.a0e1377a.chunk.js",
-    "static/css/main.855ca500.chunk.css",
+    "static/css/main.92768327.chunk.css",
     "static/js/main.57f6eea4.chunk.js"
   ]
 }
